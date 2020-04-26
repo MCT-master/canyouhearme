@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{148:function(a){a.exports=JSON.parse('{"allTagsPath":"/mct-av-wiki/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/mct-av-wiki/blog/tags/hola"}')}}]);
