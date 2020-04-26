@@ -2,20 +2,20 @@ module.exports = {
   title: 'Can You Hear Me?',
   tagline: 'For all confusing audio-video menagerie',
   url: 'https://jacksonmgoode.github.io',
-  baseUrl: '/mct-av-wiki',
-  favicon: 'img/favicon.ico',
+  baseUrl: '/mct-av-wiki/',
+  favicon: 'img/mct-logo.ico',
   organizationName: 'jacksonmgoode', // Usually your GitHub org/user name.
   projectName: 'mct-av-wiki', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'CYHM',
+      title: 'CYHM?',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/mct-logo.png',
       },
       links: [
         {
-          to: 'docs/doc1',
+          to: 'docs/overview',
           activeBasePath: 'docs',
           label: 'Wiki',
           position: 'left',
