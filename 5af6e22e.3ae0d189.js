@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{151:function(a){a.exports=JSON.parse('{"allTagsPath":"/mct-av-wiki/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/mct-av-wiki/blog/tags/docusaurus"}')}}]);
