@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Overview: ['overview'],
+    Overview: ['overview','about'],
     Audio: ['source-connect'],
     Video: ['zoom'],
     Features: ['mdx'],

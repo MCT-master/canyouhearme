@@ -10,7 +10,7 @@ module.exports = {
     navbar: {
       title: 'CYHM?',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'MCT Logo',
         src: 'img/mct-logo.png',
       },
       links: [
@@ -35,12 +35,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'Overview',
+              to: 'docs/overview',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'About',
+              to: 'docs/about',
             },
           ],
         },
@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} MCT A/V Wiki`,
+      copyright: `Copyright © ${new Date().getFullYear()} Music, Communications and Technology`,
     },
   },
   presets: [
@@ -81,7 +81,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/jacksonmgoode/mct-av-wiki/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
