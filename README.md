@@ -1,10 +1,8 @@
-## What is _Can You Hear Me?_
+# What is _Can You Hear Me?_
 
 Can You Hear Me? is a wiki and guide for an ever expanding list of audio-video communication softwares created by the students at the [Music, Communications and Technology](https://www.uio.no/english/studies/programmes/mct-master/) master's program between UiO and NTNU in Norway and sponsored by [SALTO](https://www.ntnu.edu/salto).
 
-<img alt="MCT Banner" src={useBaseUrl('img/mct-banner.png')} />
-<br></br>
-<br></br>
+![MCT Banner](/static/img/mct-banner.png)
 
 Here you can find documentation of these softwares with specifications and thoughtful assessments of their usability and performance. In addition, you can find installation tutorials and guides for common softwares that aim to be simple, concise, and accessible to users of any technical skill.
 
@@ -13,8 +11,6 @@ Here you can find documentation of these softwares with specifications and thoug
 CYHM? came about in the continued COVID frenzy to equip colleagues, friends, and family members with video chatting applications. This naturally led to the public experimenting with these technologies, asking questions like "How can I jam with friends over the internet?", "Why is my internet so slow?", and most commonly, "Can you hear me?". We hope that this site might be able to answer a few of those questions. 
 
 To read a more elaborate description of this project, please visit our [about](/about) page.
-
-## Technicalities
 
 # Website
 
