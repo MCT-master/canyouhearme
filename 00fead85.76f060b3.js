@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{138:function(a){a.exports=JSON.parse('{"allTagsPath":"/canyouhearme/blog/tags","slug":"example","name":"example","count":1,"permalink":"/canyouhearme/blog/tags/example"}')}}]);
