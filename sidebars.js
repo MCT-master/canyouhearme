@@ -1,8 +1,8 @@
 module.exports = {
   someSidebar: {
     Overview: ['overview','about'],
-    Audio: ['source-connect'],
-    Video: ['zoom'],
-    Features: ['mdx'],
+    Audio: ['jacktrip','ninjam', 'soundjack', 'source-connect'],
+    Video: ['jitsi','skype','zoom'],
+    Tools: ['iperf', 'jack'],
   },
 };

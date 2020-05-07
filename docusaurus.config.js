@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Can You Hear Me?',
-  tagline: 'For all confusing audio-video menagerie',
+  tagline: 'For all your confusing audio-video menagerie',
   url: 'https://jacksonmgoode.github.io',
   baseUrl: '/mct-av-wiki/',
   favicon: 'img/mct-logo.ico',
@@ -57,10 +57,6 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/MCT-master',
             },
@@ -81,7 +77,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/jacksonmgoode/mct-av-wiki/edit/master/website/',
+            'https://github.com/jacksonmgoode/canyouhearme/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
