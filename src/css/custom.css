@@ -34,3 +34,107 @@
 .navbar__items {
   font-size: 20px;
 }
+
+.avatar_links {
+  padding-top: 1em;
+}
+
+.step_container {
+  /* height: 460px;
+  overflow-y: scroll; */
+  max-width: 100%;
+
+}
+
+.row_step {
+  display: flex;
+  max-width: 100%;
+}
+
+.column_text {
+  flex: 50%;
+  word-wrap: break-word;
+}
+
+.column_media {
+  flex: 50%;
+}
+
+.step_title {
+  /* vertical-align: bottom; */
+  align-items: center; 
+  /* justify-content: center; */
+}
+
+.step_subtitle {
+  /* vertical-align: bottom; */
+  padding: 0 0 .67em 1em;
+  color: grey;
+  /* justify-content: center; */
+}
+
+.step_points {
+  /* max-height: 400px; */
+}
+
+.step_image {
+  display: block;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: grey;
+}
+
+.step_image img {
+  box-shadow: 0px 1px 6px grey;
+  max-width: 100%;
+  max-height: 360px;
+}
+
+.button_bar {
+  text-align: left;
+  padding-top: 1em;
+  /* background-color: var(--ifm-color-primary-lightest);
+  padding: 6px 24px;
+  border-radius: 4px; */
+}
+
+.button_guide {
+  transition-duration: 0.3s;
+  display: inline-block;
+  color: black;
+  border-color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 24px;
+  margin-right: 12px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+.button_guide:hover {
+  background-color: var(--ifm-color-primary-light);
+  /* background-color: #404040;   */
+  color: white;
+}
+
+.scrollbox {
+  overflow: auto;
+  /* width: 200px; */
+  max-height: 460px;
+  /* margin: 50px auto; */
+  background: /* Shadow covers */
+  linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
+  radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background: /* Shadow covers */
+  linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
+  radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
+}

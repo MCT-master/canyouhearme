@@ -1,0 +1,72 @@
+---
+id: guide-test
+title: Guide Test
+hide_title: true
+sidebar_label: Guide Test
+---
+import GuideEntry from '../GuideEntry'
+
+<div>   
+    <GuideEntry 
+        title = "Setting up Zoom!" 
+        description = "Here is an example of what a detailed guide might look like for Zoom on macOS. 👀"
+        steps = {[
+            {
+                title: "Download Zoom",
+                points: [
+                    "Visit zoom.us/download",
+                    "Download macOS version of Zoom",
+                    "Click through installation"
+                ],
+                media: [
+                    "https://picsum.photos/400?random=4",
+                    "Zoom stuff!"
+                ],
+                descs: [""]
+            },
+            {
+                title: "To connect with Zoom",
+                points: [
+                    "Accept “Unknown developer” warning during opening",
+                    "Enter the number of the Zoom room you’re connecting to",
+                    "Accept “Unknown developer” warning during opening"
+                ],
+                media: [
+                    "https://picsum.photos/400?random=1",
+                    "This is what dreams are made of"
+                ],
+                descs: [""]
+
+            },
+            {
+                title: "To host with Zoom",
+                points: [
+                    "Sign in or register a new account",
+                        [
+                        "Click top right profile icon",
+                        "Fill our registration",
+                        "Verify email"
+                        ],
+                    "Click, “New Meeting”",
+                    "Click Invite (multiple options below)",
+                        [
+                        "Send invitees the Zoom Meeting ID to connect",
+                        "Search through list for contacts",
+                        "Click “Copy Invitation” to and then paste in message/email to invites",
+                        "Click “Email” and use email service to send invitation",
+                        ],
+                ],
+                media: [
+                    "https://picsum.photos/400?random=2",
+                    "Whoa!"
+                ],
+                descs: [""]
+            },
+
+        ]}
+        ease = ""
+        issues = ""
+        info = ""
+        caution = ""
+    />
+</div>
