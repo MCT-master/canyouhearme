@@ -23,8 +23,9 @@ class GuideEntry extends React.Component {
             this.setState({
                 current: index
             });
-            }
+        }
     }
+
     handlePrev() {
         let index = this.state.current,
             length = this.state.step_num;
@@ -34,8 +35,7 @@ class GuideEntry extends React.Component {
             this.setState({
                 current: index
             });
-            }
-        
+        }
     }
 
     render() {
@@ -63,7 +63,7 @@ class GuideEntry extends React.Component {
                                         {points.map((point, index) => {
                                             return Array.isArray(point)
                                                 ? <ol> {point.map((subpoint) => (<li> {subpoint} </li>))} </ol> 
-                                                : <li> {point} </li>
+                                                : <li class="step_point"> {point} </li>
                                         })}
                                     </ol>
                                 </div>

@@ -44,19 +44,20 @@ class WikiEntry extends React.Component {
                                     <p><strong>OS Supported: </strong> {this.props.os_support}</p>
                                     <p><strong>Pricing: </strong>{this.props.pricing}</p>
                                     <p><strong>Requires sign-up?: </strong>{this.props.sign_up}</p>
+                                    <p><strong>Website: </strong><a href={this.props.website}>{this.props.website}</a></p>
                                 </div>
                                 <div class="col">
                                     <h2>Detailed information</h2>
                                     <br></br>
                                     <p><strong>Self-hosted?: </strong>{this.props.hosting}</p>
-                                    <p><strong>Required net-speed: </strong>{this.props.req_speed}</p>
                                     <p><strong>Recommended net-speed: </strong>{this.props.rec_speed}</p>
+                                    <p><strong>Required net-speed: </strong>{this.props.req_speed}</p>
                                     <p><strong>Max quality: </strong>{this.props.max_qual}</p>
                                     <p><strong>Latency (estimate): </strong>{this.props.latency}</p>
                                     <p><strong>Last update: </strong>{this.props.last_update}</p>
                                     <p><strong>Open source?: </strong>{this.props.open_source}</p>
                                     { this.props.repo.length > 0 &&
-                                        <p><strong>Repo: </strong>{this.props.repo}</p>
+                                        <p><strong>Repo: </strong><a href={this.props.repo}>{this.props.repo}</a></p>
                                     }
                                 </div>
                             </div>
@@ -84,20 +85,16 @@ class WikiEntry extends React.Component {
                                     <td>{this.props.os_support}</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Pricing:</strong></td>
-                                    <td>{this.props.pricing}</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Requires sign-up?:</strong></td>
-                                    <td>{this.props.sign_up}</td>
-                                </tr>
-                                <tr>
                                     <td><strong>Self-hosted?:</strong></td>
                                     <td>{this.props.hosting}</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Recommended net-speed:</strong></td>
                                     <td>{this.props.rec_speed}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Required net-speed:</strong></td>
+                                    <td>{this.props.req_speed}</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Max quality:</strong></td>

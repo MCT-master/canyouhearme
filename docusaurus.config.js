@@ -13,6 +13,19 @@ module.exports = {
         alt: 'MCT Logo',
         src: 'img/mct-logo.png',
       },
+      // items: [
+      //   {
+      //     to: "wiki/",
+      //     label: "Wiki",
+      //     position: "left",
+      //   },
+      //   {
+      //     to: "guides/",
+      //     activeBasePath: "guides",
+      //     label: "Guides",
+      //     position: "left",
+      //   }
+      // ],
       links: [
         {
           to: 'docs/overview',
@@ -20,7 +33,11 @@ module.exports = {
           label: 'Wiki',
           position: 'left',
         },
-        {to: 'blog', label: 'Guides', position: 'left'},
+        {
+          to: 'guides/overview',
+          activeBasePath: 'guides',
+          label: 'Guides',
+          position: 'left'},
         {
           href: 'https://github.com/MCT-master',
           label: 'GitHub',
@@ -32,15 +49,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Information',
           items: [
             {
               label: 'Overview',
-              to: 'docs/overview',
+              to: 'wiki/overview',
             },
             {
               label: 'About',
-              to: 'docs/about',
+              to: 'wiki/about',
             },
           ],
         },
@@ -75,13 +92,27 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebarsWiki.js'),
           editUrl:
             'https://github.com/jacksonmgoode/canyouhearme/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "overview", // for first plugin-content-docs with "resources/" path
+        homePageId: "guides",
+        path: "./guides", // Path to data on filesystem, relative to site dir.
+        routeBasePath: "guides", // URL Route.
+        include: ["**/*.mdx"],
+        sidebarPath: require.resolve("./sidebarsGuides.js"),
+        disableVersioning: true, // if not set with vesions, throw: Identifier 'React' has already been declared
       },
     ],
   ],

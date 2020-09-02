@@ -40,30 +40,31 @@
 }
 
 .step_container {
-  /* height: 460px;
-  overflow-y: scroll; */
   max-width: 100%;
-
+  
 }
 
 .row_step {
+  /* overflow-y: scroll; */
   display: flex;
   max-width: 100%;
 }
 
 .column_text {
-  flex: 50%;
+  height: 460px;
+  flex: 60%;
   word-wrap: break-word;
 }
 
 .column_media {
-  flex: 50%;
+  flex: 40%;
   /* Test */
 }
 
 .step_title {
   /* vertical-align: bottom; */
   align-items: center; 
+  /* color: var(--ifm-color-primary); */
   /* justify-content: center; */
 }
 
@@ -74,8 +75,9 @@
   /* justify-content: center; */
 }
 
-.step_points {
+.step_point {
   /* max-height: 400px; */
+  font-weight: 550; /* semi-bold */
 }
 
 .step_image {
@@ -102,11 +104,11 @@
 }
 
 .button_guide {
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   display: inline-block;
   color: black;
   border-color: black;
-  border: none;
+  border: none; 
   border-radius: 4px;
   padding: 6px 24px;
   margin-right: 12px;
@@ -118,24 +120,36 @@
 
 .button_guide:hover {
   background-color: var(--ifm-color-primary-light);
-  /* background-color: #404040;   */
+  background-color: #404040;  
   color: white;
+}
+
+.button--outline {
+  /* --ifm-button-background-color:var(--ifm-color-primary-lightest); */
+  --ifm-button-background-color: white;
+}
+
+.button--outline:hover {
+  --ifm-button-background-color: var(--ifm-color-primary-lightest);
 }
 
 .scrollbox {
   overflow: auto;
-  /* width: 200px; */
-  max-height: 460px;
+  /* max-height: 460px; */
   /* margin: 50px auto; */
   background: /* Shadow covers */
-  linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
-  radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+    linear-gradient(white 30%, rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
+    radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
+    radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
   background: /* Shadow covers */
-  linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
-  radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+    linear-gradient(white 30%, rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, /* Shadows */
+    radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
+    radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
   background-repeat: no-repeat;
-  background-color: white;
-  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  /* background-color: white; */
+  background-size: 100% 80px, 100% 80px, 100% 10px, 100% 10px;
   /* Opera doesn't support this in the shorthand */
   background-attachment: local, local, scroll, scroll;
 }
