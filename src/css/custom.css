@@ -58,7 +58,6 @@
 
 .column_media {
   flex: 40%;
-  /* Test */
 }
 
 .step_title {
@@ -125,8 +124,8 @@
 }
 
 .button--outline {
-  /* --ifm-button-background-color:var(--ifm-color-primary-lightest); */
-  --ifm-button-background-color: white;
+  --ifm-button-background-color:var(--ifm-color-primary-lightest);
+  /* --ifm-button-background-color: white; */
 }
 
 .button--outline:hover {

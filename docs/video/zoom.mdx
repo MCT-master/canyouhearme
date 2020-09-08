@@ -5,11 +5,12 @@ sidebar_label: Zoom
 hide_title: true
 ---
 import WikiEntry from '../../WikiEntry'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <div>
     <WikiEntry 
         title= "Zoom" 
-        pic_url= "/static/img/zoom-icon.jpg" 
+        pic_url= {useBaseUrl("img/zoom-icon.jpg")}
         description= "Zoom is a widely used confrencing application for casual and commerical use. It is well supported and compatible with most platforms."
         developer= "Zoom US"
         website= "https://zoom.us/"

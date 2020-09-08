@@ -5,11 +5,13 @@ sidebar_label: Source-Connect Now
 hide_title: true
 ---
 import WikiEntry from '../../WikiEntry'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 
 <div>
     <WikiEntry 
         title= "Source-Connect Now"
-        pic_url= "https://pbs.twimg.com/media/ES9pCMwUwAAfCt2.jpg"
+        pic_url= {useBaseUrl('img/source-connect-logo.jpg')}
         description= "Source-Connect is a service from Source-Elements, currently in beta, that provides low-latency audio connections with up to 8 people over WebRTC."
         developer= "Source Elements"
         website= "https://now.source-elements.com/"
