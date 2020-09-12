@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/mct-logo.ico',
   organizationName: 'jacksonmgoode', // Usually your GitHub org/user name.
   projectName: 'canyouhearme', // Usually your repo name.
+  onBrokenLinks: 'ignore',
   themeConfig: {
     navbar: {
       title: 'CYHM?',
@@ -15,13 +16,13 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/overview',
+          to: 'docs',
           activeBasePath: 'docs',
           label: 'Wiki',
           position: 'left',
         },
         {
-          to: 'guides/overview',
+          to: 'guides',
           activeBasePath: 'guides',
           label: 'Guides',
           position: 'left'},
@@ -40,7 +41,7 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: 'docs/overview',
+              to: 'docs',
             },
             {
               label: 'About',
@@ -71,7 +72,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Music, Communications and Technology`,
+      copyright: `Copyright © ${new Date().getFullYear()} Music, Communication and Technology`,
     },
   },
   presets: [
@@ -94,7 +95,6 @@ module.exports = {
       "@docusaurus/plugin-content-docs",
       {
         id: "overview", // for first plugin-content-docs with "resources/" path
-        // homePageId: "guides",
         path: "./guides", // Path to data on filesystem, relative to site dir.
         routeBasePath: "guides", // URL Route.
         include: ["**/*.mdx"],
