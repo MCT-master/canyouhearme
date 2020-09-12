@@ -40,11 +40,11 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: 'wiki/overview',
+              to: 'docs/overview',
             },
             {
               label: 'About',
-              to: 'wiki/about',
+              to: 'docs/about',
             },
           ],
         },
@@ -94,12 +94,11 @@ module.exports = {
       "@docusaurus/plugin-content-docs",
       {
         id: "overview", // for first plugin-content-docs with "resources/" path
-        homePageId: "guides",
+        // homePageId: "guides",
         path: "./guides", // Path to data on filesystem, relative to site dir.
         routeBasePath: "guides", // URL Route.
         include: ["**/*.mdx"],
-        sidebarPath: require.resolve("./sidebarsGuides.js"),
-        disableVersioning: true, // if not set with vesions, throw: Identifier 'React' has already been declared
+        sidebarPath: require.resolve("./sidebarsGuides.js")
       },
     ],
   ],
