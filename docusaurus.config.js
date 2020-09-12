@@ -13,20 +13,7 @@ module.exports = {
         alt: 'MCT Logo',
         src: 'img/mct-logo.png',
       },
-      // items: [
-      //   {
-      //     to: "wiki/",
-      //     label: "Wiki",
-      //     position: "left",
-      //   },
-      //   {
-      //     to: "guides/",
-      //     activeBasePath: "guides",
-      //     label: "Guides",
-      //     position: "left",
-      //   }
-      // ],
-      links: [
+      items: [
         {
           to: 'docs/overview',
           activeBasePath: 'docs',
