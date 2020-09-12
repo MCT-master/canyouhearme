@@ -82,7 +82,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebarsWiki.js'),
           editUrl:
-            'https://github.com/jacksonmgoode/canyouhearme/edit/master/website/',
+            'https://github.com/jacksonmgoode/canyouhearme/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -98,7 +98,9 @@ module.exports = {
         path: "./guides", // Path to data on filesystem, relative to site dir.
         routeBasePath: "guides", // URL Route.
         include: ["**/*.mdx"],
-        sidebarPath: require.resolve("./sidebarsGuides.js")
+        sidebarPath: require.resolve("./sidebarsGuides.js"),
+        editUrl:
+            'https://github.com/jacksonmgoode/canyouhearme/edit/master/',
       },
     ],
   ],
