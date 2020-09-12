@@ -3,6 +3,6 @@ module.exports = {
     Overview: ['overview'],
     Audio: [],
     Video: ['video/livestream'],
-    Tools: [],
+    Tools: ['tools/wiki-entry'],
   },
 };

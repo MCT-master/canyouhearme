@@ -1,0 +1,118 @@
+---
+id: wiki-entry
+title: Creating your first wiki entry
+hide_title: false
+sidebar_label: 'Your First Wiki Entry'
+---
+import GuideEntry from '../../GuideEntry'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+<div>   
+    <GuideEntry 
+        title = "How to make a wiki entry on CYHM" 
+        description = "A simple how-to guide for making a wiki post on this site"
+        steps = {[
+            {
+                title: ["Start with Git", "Git going (lol)"],
+                points: [
+                    <code>cd &#60;directory&#62;</code>,
+                        ["Replace <directory> with some location you want to clone the repo into."],
+                    <code>git clone https://github.com/jacksonmgoode/canyouhearme.git</code>,
+                        ["That url is connected, not broken"],
+                    <code>cd canyouhearme</code>,
+                        ["This simply moves your current directory inside the repository folder you just cloned."],
+                ],
+                media: [
+                    useBaseUrl("img/wiki-entry-step-1.webp"),
+                    "Terminal input for these steps"
+                ],
+                descs: [
+                    "Let's start just by cloning the repo into a folder!"
+                ]
+            },
+            {
+                title: ["Yarn", "Not the kind you sow with"],
+                points: [
+                    <code>yarn</code>,
+                        ["Typing 'yarn' will trigger a process to fetch and install all the necessary packages.",
+                        "These are needed to host and deploy the site."],
+                    <code>yarn build</code>,
+                        ["Next we will build the site. This is likely where any issues may appear.",
+                        "If you find a problem please message me on Discord!"],
+                    <code>yarn start</code>,
+                        ["This step is optional, but it will deploy the site locally (just like in Jekyll).",
+                        "Useful for checking out the entry you make"]
+                ],
+                media: [
+                    useBaseUrl("img/wiki-entry-step-2.webp"),
+                    "More terminal input!"
+                ],
+                descs: [
+                    "Now we will install and build the site's resources locally. If you would like you can also deploy the site to see it (on localhost:3000)."
+                ]
+            },
+            {
+                title: ["Adding a wiki entry!","How to use the template to create a new entry"],
+                points: [
+                    "Copy 'wiki-template.mdx'",
+                        ["The file can be found in the 'docs' folder"],
+                    "Rename and move it to a category",
+                        ["You can rename it to the software/service you're adding.",
+                        "Drag the file to the category the service is a part of"],
+                    "Fill in info for the service",
+                        ["There are comments above to describe what each parameter stands for and some default values to use",
+                        "There is no set schema for each data type, but looking at other entries in the 'docs' folder might provide some hints."],
+                    "Editing front-matter",
+                        ["Fill in the 'id', 'title', and 'sidebar_label' with your softwares name",
+                        "'id' is lowercased, and 'title' and 'sidebar_label' are typically the same and can be started with uppercase"]
+                ],
+                media: [
+                    "",
+                    ""
+                ],
+                descs: [
+                    ["When filling out the details and descriptions of the software, there might be times where you want to link to something. There are examples of putting a link into the parameter and bolding, italicizing in the wiki-template. Checking out ",<a href='https://github.com/jacksonmgoode/canyouhearme/edit/master/docs/audio/jacktrip.mdx'>jacktrip.mdx</a>," is a nice example of a wiki entry!"],   
+                ]
+            },
+            {
+                title: ["Creating a link to your page", "Editing the sidebar"],
+                points: [
+                    "Open 'sidebarsWiki.js'",
+                        ["Find the category that you added your new wiki entry into"],
+                    "Add your entry to the list",
+                        ["Add a string to the list in the format [category][id], where id is the id you specified in the front-matter (the stuff at the top of the page)"],
+                ],
+                media: [
+                    useBaseUrl("img/wiki-entry-step-4.png"),
+                    "The new entry is shown highlighted"
+                ],
+                descs: [
+                    [ "If there are issues, try and testing out the site with", <code>yarn start</code>, ". This will allow you to see the page and the changes you made to the site." ],
+                    "And if issues persist, just shoot me an email on Discord!"
+                ]
+            },
+            {
+                title: ["Pushing to the repository", "Finally!"],
+                points: [
+                    <code>git push</code>,
+                        ["Just push as you would to any other repo - add a message saying what you added",
+                        "There shouldn't be any issues with this you're only adding files - not yet changing the site"],
+                    <code>GIT_USER=&#60;GITHUB_USERNAME&#62; yarn deploy</code>,
+                        ["Executing this code from your current directory (which should be canyouhearme) will build and deploy your post to the live site"],
+                ],
+                media: [
+                    "",
+                    ""
+                ],
+                descs: [
+                    [ "If there are issues, try and testing out the site with", <code>yarn start</code>, ". This will allow you to see the page and the changes you made to the site." ],
+                    "And if issues persist, just shoot me an email on Discord!"
+                ]
+            },
+        ]}
+        ease = "Testing blah blah"
+        issues = ""
+        info = ""
+        caution = ""
+    />
+</div>

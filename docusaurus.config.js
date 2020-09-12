@@ -4,9 +4,8 @@ module.exports = {
   url: 'https://jacksonmgoode.github.io',
   baseUrl: '/canyouhearme/',
   favicon: 'img/mct-logo.ico',
-  organizationName: 'jacksonmgoode', // Usually your GitHub org/user name.
-  projectName: 'canyouhearme', // Usually your repo name.
-  onBrokenLinks: 'ignore',
+  organizationName: 'jacksonmgoode',
+  projectName: 'canyouhearme',
   themeConfig: {
     navbar: {
       title: 'CYHM?',

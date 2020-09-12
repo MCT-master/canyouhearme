@@ -41,7 +41,7 @@
 
 .step_container {
   max-width: 100%;
-  
+  position: relative;
 }
 
 .row_step {
@@ -58,6 +58,7 @@
 
 .column_media {
   flex: 40%;
+  overflow: hidden;
 }
 
 .step_title {
@@ -75,11 +76,16 @@
 }
 
 .step_point {
+  padding: 2px 0; /* a little space around step points */
+}
+
+.step_point + ol {
   /* max-height: 400px; */
-  font-weight: 550; /* semi-bold */
+  font-weight: 200; /* semi-light */
 }
 
 .step_image {
+  position: absolute;
   display: block;
   margin: auto;
   justify-content: center;
@@ -88,10 +94,20 @@
   color: grey;
 }
 
+.step_image figure {
+  margin: 1em;
+}
+
 .step_image img {
-  box-shadow: 0px 1px 6px grey;
+  box-shadow: 0 2px 6px 0 grey;
   max-width: 100%;
-  max-height: 360px;
+  transition: all .2s;
+}
+
+.step_image img:hover {
+  transform: scale(1.5) translate(-15%, 15%);
+  box-shadow: 1px 4px 8px black;
+  overflow: hidden;
 }
 
 .button_bar {
