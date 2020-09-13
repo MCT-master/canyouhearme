@@ -105,7 +105,7 @@
 }
 
 .step_image img:hover {
-  transform: scale(1.5) translate(-15%, 15%);
+  transform: scale(1.5) translate(-15%);
   box-shadow: 1px 4px 8px black;
   overflow: hidden;
 }

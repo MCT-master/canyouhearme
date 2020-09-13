@@ -21,13 +21,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                         ["That url is connected, not broken"],
                     <code>cd canyouhearme</code>,
                         ["This simply moves your current directory inside the repository folder you just cloned."],
+                    <code>git pull</code>,
+                        ["This is only needed to check for updates to the repo since you've cloned it. Good to do before you make any changes or additions."]
                 ],
                 media: [
                     useBaseUrl("img/wiki-entry-step-1.webp"),
                     "Terminal input for these steps"
                 ],
                 descs: [
-                    "Let's start just by cloning the repo into a folder!"
+                    ["Let's start just by cloning the repo into a folder! If you're having trouble cloning, pulling or generally git-ing, check out ", <a href='https://github.com/MCT-master/Guides/wiki/How-to-use-the-MCT-Blog-%E2%80%90-Creating-a-Blog-Post'>Aleksander's great guide</a>, " made for the the MCT Blog."]
                 ]
             },
             {
@@ -67,8 +69,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                         "'id' is lowercased, and 'title' and 'sidebar_label' are typically the same and can be started with uppercase"]
                 ],
                 media: [
-                    "",
-                    ""
+                    useBaseUrl("img/wiki-entry-step-3.png"),
+                    "Here's what the template looks like!"
                 ],
                 descs: [
                     ["When filling out the details and descriptions of the software, there might be times where you want to link to something. There are examples of putting a link into the parameter and bolding, italicizing in the wiki-template. Checking out ",<a href='https://github.com/jacksonmgoode/canyouhearme/edit/master/docs/audio/jacktrip.mdx'>jacktrip.mdx</a>," is a nice example of a wiki entry!"],   
@@ -87,8 +89,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                     "The new entry is shown highlighted"
                 ],
                 descs: [
-                    [ "If there are issues, try and testing out the site with", <code>yarn start</code>, ". This will allow you to see the page and the changes you made to the site." ],
-                    "And if issues persist, just shoot me an email on Discord!"
+                    "This allows your new entry to be visible on the sidebar categories."
                 ]
             },
             {
@@ -98,7 +99,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                         ["Just push as you would to any other repo - add a message saying what you added",
                         "There shouldn't be any issues with this you're only adding files - not yet changing the site"],
                     <code>GIT_USER=&#60;GITHUB_USERNAME&#62; yarn deploy</code>,
-                        ["Executing this code from your current directory (which should be canyouhearme) will build and deploy your post to the live site"],
+                        ["Replace <GITHUB_USERNAME> with your GitHub username",
+                        "Executing this code from your current directory (which should be canyouhearme) will build and deploy your post to the live site"],
                 ],
                 media: [
                     "",
@@ -106,7 +108,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                 ],
                 descs: [
                     [ "If there are issues, try and testing out the site with", <code>yarn start</code>, ". This will allow you to see the page and the changes you made to the site." ],
-                    "And if issues persist, just shoot me an email on Discord!"
+                    ["Checking ", <a href='https://github.com/MCT-master/Guides/wiki/How-to-use-the-MCT-Blog-%E2%80%90-Creating-a-Blog-Post'>Aleksander's guide</a> , " is also helpful at this step. And if issues persist, just shoot me an email on Discord!"]
                 ]
             },
         ]}
