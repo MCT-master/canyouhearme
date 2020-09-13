@@ -9,16 +9,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 <div>   
     <GuideEntry 
-        title = "How to make a wiki entry on CYHM" 
-        description = "A simple how-to guide for making a wiki post on this site"
+        title = "Making a wiki entry" 
+        description = "A simple how-to guide for making a wiki post on CYHM"
         steps = {[
             {
-                title: ["Start with Git", "Git going (lol)"],
+                title: ["Start with Git", "Git going"],
                 points: [
                     <code>cd &#60;directory&#62;</code>,
                         ["Replace <directory> with some location you want to clone the repo into."],
                     <code>git clone https://github.com/jacksonmgoode/canyouhearme.git</code>,
-                        ["That url is connected, not broken"],
+                        ["The url has no breaks"],
                     <code>cd canyouhearme</code>,
                         ["This simply moves your current directory inside the repository folder you just cloned."],
                     <code>git pull</code>,
@@ -26,7 +26,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                 ],
                 media: [
                     useBaseUrl("img/wiki-entry-step-1.webp"),
-                    "Terminal input for these steps"
+                    "Terminal input for these steps (animated)"
                 ],
                 descs: [
                     ["Let's start just by cloning the repo into a folder! If you're having trouble cloning, pulling or generally git-ing, check out ", <a href='https://github.com/MCT-master/Guides/wiki/How-to-use-the-MCT-Blog-%E2%80%90-Creating-a-Blog-Post'>Aleksander's great guide</a>, " made for the the MCT Blog."]
@@ -54,26 +54,27 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                 ]
             },
             {
-                title: ["Adding a wiki entry!","How to use the template to create a new entry"],
+                title: ["Adding a wiki entry!", "How to use the template to create a new entry"],
                 points: [
                     "Copy 'wiki-template.mdx'",
                         ["The file can be found in the 'docs' folder"],
                     "Rename and move it to a category",
-                        ["You can rename it to the software/service you're adding.",
-                        "Drag the file to the category the service is a part of"],
+                        ["You should rename it to the software/service you're adding, ie. 'jacktrip'",
+                        "Drag the file to the category the service falls within"],
                     "Fill in info for the service",
                         ["There are comments above to describe what each parameter stands for and some default values to use",
-                        "There is no set schema for each data type, but looking at other entries in the 'docs' folder might provide some hints."],
-                    "Editing front-matter",
+                        "There is no set schema for each data type, but looking at the comments as well as other entries in the 'docs' folder might provide some hints."],
+                    "Editing front-matter (the stuff at the top)",
                         ["Fill in the 'id', 'title', and 'sidebar_label' with your softwares name",
                         "'id' is lowercased, and 'title' and 'sidebar_label' are typically the same and can be started with uppercase"]
                 ],
                 media: [
                     useBaseUrl("img/wiki-entry-step-3.png"),
-                    "Here's what the template looks like!"
+                    "Here's what the template looks like"
                 ],
                 descs: [
-                    ["When filling out the details and descriptions of the software, there might be times where you want to link to something. There are examples of putting a link into the parameter and bolding, italicizing in the wiki-template. Checking out ",<a href='https://github.com/jacksonmgoode/canyouhearme/edit/master/docs/audio/jacktrip.mdx'>jacktrip.mdx</a>," is a nice example of a wiki entry!"],   
+                    "Make sure that everything you can falls within the quotes (\"\") otherwise there will be issues. Links for the website and support links are automatically created, all you have to do is paste the url - no need to mess with any html.",
+                    ["When filling out the details and descriptions of the software, there might be times where you want to link to something. There are examples of putting a link into the parameter and bolding, italicizing in other entries. Checking out ",<a href='https://github.com/jacksonmgoode/canyouhearme/edit/master/docs/audio/jacktrip.mdx'>jacktrip.mdx</a>," is a nice example of a wiki entry!"],   
                 ]
             },
             {
@@ -112,7 +113,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
                 ]
             },
         ]}
-        ease = "Testing blah blah"
+        ease = ""
         issues = ""
         info = ""
         caution = ""

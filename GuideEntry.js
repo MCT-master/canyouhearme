@@ -68,6 +68,9 @@ class GuideEntry extends React.Component {
                                     </ol>
                                 </div>
                             }
+                            { points.length > 1 && descs[0].length > 2 &&
+                                <hr></hr>
+                            }
                             { descs[0].length > 2 &&
                                 <div class="step_desc">
                                     {descs.map((desc) => (
