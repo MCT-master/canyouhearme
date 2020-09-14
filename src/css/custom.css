@@ -40,8 +40,10 @@
 }
 
 .step_container {
-  max-width: 100%;
   position: relative;
+  max-width: 100%;
+  /* max-height: 100%; */
+  
 }
 
 .row_step {
@@ -51,7 +53,7 @@
 }
 
 .column_text {
-  height: 460px;
+  height: 520px;
   flex: 60%;
   word-wrap: break-word;
 }
@@ -61,9 +63,13 @@
   overflow: hidden;
 }
 
+#guide_title {
+
+}
+
 .step_title {
-  /* vertical-align: bottom; */
   align-items: center; 
+  /* vertical-align: bottom; */
   /* color: var(--ifm-color-primary); */
   /* justify-content: center; */
 }
@@ -125,7 +131,7 @@
   border-color: black;
   border: none; 
   border-radius: 4px;
-  padding: 6px 24px;
+  padding: 8px 32px;
   margin-right: 12px;
   font-size: 16px;
   text-align: center;

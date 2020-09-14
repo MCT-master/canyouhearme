@@ -40,13 +40,18 @@ class GuideEntry extends React.Component {
 
     render() {
         let index = this.state.current,
+            step_length = this.state.step_num,
             step_title = this.props.steps[index].title,
             points = this.props.steps[index].points,
             media = this.props.steps[index].media,
             descs = this.props.steps[index].descs;
 
         return (
-            <div>
+            <div class = "rendered">
+                {/* { index === 0 &&
+                    <h1> {this.props.title} </h1>
+                } */}
+                <h1 id = "guide_title"> {this.props.title} </h1>
                 <div class = "step_container">
                     <div class="row_step step_title">
                         <h2> {Array.isArray(step_title) ? step_title[0] : step_title} </h2>
@@ -55,7 +60,6 @@ class GuideEntry extends React.Component {
                         </span>
                     </div>
                     <div class="row_step scrollbox">
-                        {/* <h1> {this.props.title} </h1> */}
                         <section class="column_text">
                             { points.length > 1 &&
                                 <div class="step_points">
@@ -91,8 +95,12 @@ class GuideEntry extends React.Component {
                     </div>
                 </div>
                 <div class="button_bar">
-                    <button class="button_guide" type="button" id="prevBtn" onClick={this.handlePrev}> ← </button>
-                    <button class="button_guide" type="button" id="nextBtn" onClick={this.handleNext}> → </button>
+                    { index > 0 &&
+                        <button class="button_guide" type="button" id="prevBtn" onClick={this.handlePrev}> ← </button>
+                    }   
+                    { index < step_length - 1 &&
+                        <button class="button_guide" type="button" id="nextBtn" onClick={this.handleNext}> → </button>
+                    }
                 </div>
             </div>
         );
