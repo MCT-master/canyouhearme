@@ -6,7 +6,7 @@ import TabItem from '@theme/TabItem';
 class WikiEntry extends React.Component {
     render() {
         return (
-            <div>
+            <div class="rendered">
                 <div class="avatar avatar--vertical">
                     { this.props.pic_url.length > 0 &&
                         <img class="avatar__photo avatar__photo--xl" src={this.props.pic_url}/>
@@ -191,7 +191,7 @@ WikiEntry.defaultProps = {
     developer: '',
     website: '',
     support: '',
-    protocol: '',
+    protocol: 'Unknown',
     os_support: '',
     pricing: '',
     sign_up: '',
@@ -203,7 +203,7 @@ WikiEntry.defaultProps = {
     last_update: 'Unknown',
     open_source: '',
     repo: '',
-    ease: '',
+    ease: ['This service has not been documented by the CYHM community - yet 🤓'],
     issues: '',
     info: '',
     caution: '',

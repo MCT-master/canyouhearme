@@ -47,11 +47,11 @@ class GuideEntry extends React.Component {
             descs = this.props.steps[index].descs;
 
         return (
-            <div class = "rendered">
+            <div class="rendered">
                 {/* { index === 0 &&
                     <h1> {this.props.title} </h1>
                 } */}
-                <h1 id = "guide_title"> {this.props.title} </h1>
+                <h1 id="guide_title"> {this.props.title} </h1>
                 <div class = "step_container">
                     <div class="row_step step_title">
                         <h2> {Array.isArray(step_title) ? step_title[0] : step_title} </h2>
