@@ -82,6 +82,8 @@ module.exports = {
           sidebarPath: require.resolve('./sidebarsWiki.js'),
           editUrl:
             'https://github.com/jacksonmgoode/canyouhearme/edit/master/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
