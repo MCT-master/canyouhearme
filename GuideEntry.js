@@ -51,7 +51,10 @@ class GuideEntry extends React.Component {
                 {/* { index === 0 &&
                     <h1> {this.props.title} </h1>
                 } */}
-                <h1 id="guide_title"> {this.props.title} </h1>
+                <div class="guide_header">
+                    <h1 id="guide_title"> {this.props.title} </h1>
+                    <p id="guide_author"> By: {this.props.author} </p>
+                </div>
                 <div class = "step_container">
                     <div class="row_step step_title">
                         <h2> {Array.isArray(step_title) ? step_title[0] : step_title} </h2>

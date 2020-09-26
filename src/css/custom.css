@@ -76,6 +76,13 @@
   overflow: hidden;
 }
 
+.guide_header p {
+  position: relative;
+  margin: 0;
+  top: -1em;
+  color: var(--ifm-color-primary-light);
+}
+
 #guide_title {
 
 }
