@@ -95,12 +95,15 @@ class GuideEntry extends React.Component {
                     </div>
                 </div>
                 <div class="button_bar">
-                    { index > 0 &&
-                        <button class="button_guide" type="button" id="prevBtn" onClick={this.handlePrev}> ← </button>
+                    { index > 0
+                        ? (<button class="button_guide" type="button" id="prevBtn" onClick={this.handlePrev}> ← </button>)
+                        : (<button class="button_guide" type="button" id="prevBtn" style={{opacity: .15}}> ← </button>)
                     }   
-                    { index < step_length - 1 &&
-                        <button class="button_guide" type="button" id="nextBtn" onClick={this.handleNext}> → </button>
+                    { index < step_length - 1
+                        ? (<button class="button_guide" type="button" id="nextBtn" onClick={this.handleNext}> → </button>)
+                        : (<button class="button_guide" type="button" id="nextBtn" style={{opacity: .15}}> → </button>)
                     }
+                    
                 </div>
             </div>
         );

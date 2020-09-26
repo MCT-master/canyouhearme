@@ -24,6 +24,14 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.heroBanner_src-pages- {
+  padding: 2rem 0 !important;
+}
+
+.col--4 > p { 
+  font-size: 90%; /* smaller text on front page */
+}
+
 .spec-table table {
   display: table;
   table-layout: auto;
