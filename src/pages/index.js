@@ -8,11 +8,11 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Audio, video, and everything in between</>,
+    title: <>Audio, video, and everything else</>,
     imageUrl: 'img/pack/010-sound waves.svg',
     description: (
       <>
-        Can You Hear Me is a site for both the aspiring network musician and stir-crazy Luddite who wants to connect with friends and family over the web. Here you'll find a range of softwares, guides and tools for comparison that should allow you to make an educated decision without leaving the url.
+        Can You Hear Me is a site for both the aspiring network musician and stir-crazy Luddite who wants to connect over the web. This site hosts range of softwares, guides and tools for comparison that should allow you to make an educated decision without leaving the url.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const features = [
     ),
   },
   {
-    title: <>Created by the best minds in the business</>,
+    title: <>Made by students in Norway</>,
     imageUrl: 'img/pack/031-musical note.svg',
     description: (
       <>

@@ -24,8 +24,8 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-.heroBanner_src-pages- {
-  padding: 2rem 0 !important;
+.main-wrapper > header {
+  padding: 3rem 0;
 }
 
 .col--4 > p { 
