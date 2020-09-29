@@ -23,6 +23,11 @@ class WikiEntry extends React.Component {
                             {this.props.description}
                         </medium>
                     </div>
+                    { this.props.mct.length > 0 &&
+                        <div class="mct_links">
+                            <a href={this.props.mct}>Post from the MCT Blog</a>
+                        </div>
+                    }
                 </div>
                 
                 <hr></hr>
@@ -195,6 +200,7 @@ WikiEntry.defaultProps = {
     developer: '',
     website: '',
     support: '',
+    mct: '',
     protocol: 'Unknown',
     os_support: '',
     pricing: 'Free',

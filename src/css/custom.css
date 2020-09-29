@@ -26,7 +26,7 @@
 
 .main-wrapper > header {
   padding: 3rem 0;
-}
+  }
 
 .col--4 > p { 
   font-size: 90%; /* smaller text on front page */
@@ -48,8 +48,25 @@
 }
 
 .avatar_links {
-  padding-top: 1em;
+  margin-top: 1em;
 }
+
+.mct_links {
+  margin-top: 1em;
+}
+
+.mct_links > a {
+  text-decoration: none;
+  color: black;
+  background-color: var(--ifm-color-secondary);
+  padding: 0.5em 1em;
+  border-radius: 20px;
+}
+
+.mct_links > a:hover {
+  opacity: 0.75;
+}
+
 
 .step_container {
   position: relative;
