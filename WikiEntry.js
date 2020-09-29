@@ -16,7 +16,7 @@ class WikiEntry extends React.Component {
                         <h4 class="avatar_links">
                             <a href={this.props.website}>Official website</a>
                             { this.props.support.length > 0 &&
-                                <span> - <a href={this.props.support}>Support link</a></span>
+                                <span> • <a href={this.props.support}>Support link</a></span>
                             }
                         </h4>
                         <medium class="avatar__subtitle">

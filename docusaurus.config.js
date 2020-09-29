@@ -102,6 +102,8 @@ module.exports = {
         sidebarPath: require.resolve("./sidebarsGuides.js"),
         editUrl:
             'https://github.com/jacksonmgoode/canyouhearme/edit/master/',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
       },
     ],
   ],

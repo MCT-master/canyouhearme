@@ -97,25 +97,19 @@
   position: relative;
   margin: 0;
   top: -1em;
+}
+
+#guide_author {
   color: var(--ifm-color-primary-light);
 }
 
-#guide_title {
-
-}
-
 .step_title {
-  align-items: center; 
-  /* vertical-align: bottom; */
-  /* color: var(--ifm-color-primary); */
-  /* justify-content: center; */
 }
 
 .step_subtitle {
-  /* vertical-align: bottom; */
-  padding: 0 0 .67em 1em;
+  margin-top: .2em;
+  margin-left: .4em;
   color: grey;
-  /* justify-content: center; */
 }
 
 .step_point {
