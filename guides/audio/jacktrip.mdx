@@ -1,0 +1,110 @@
+---
+id: jacktrip
+title: Setting up JackTrip
+hide_title: true
+hide_table_of_contents: true
+sidebar_label: JackTrip
+---
+import GuideEntry from '../../GuideEntry'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+<GuideEntry 
+    title = "Setting up JackTrip" 
+    author = "Ulrik Halmøy" 
+    description = "How to get JackTrip up and going"
+    steps = {[
+        {
+            title: ["Intro", "What is JackTrip"],
+            points: [
+                ""
+            ],
+            media: [
+                "",
+                ""
+            ],
+            descs: [
+                ["",<a href='https://ccrma.stanford.edu/groups/soundwire/software/jacktrip/'>Jacktrip</a>," is a utility developed at CCRMA at Stanford for low-latency audio transmission between multiple clients."],
+                ["Jacktrip employs the ", <a href='https://jackaudio.org/'>Jack protocol</a>, " a high definition API for audio communication between applications. Jacktrip appears to be one of the few viable tools that, in theory, works on every operating system (Windows, macOS, Linux) which makes it a potentially worthwhile investment from the angle of usability and access alone."],
+            ]
+        },
+        {
+            title: ["Downloading and installing", "A whole lot of Jacks"],
+            points: [
+                "Visit the developers page to find all packages",
+                    [["Found ", <a href='https://www.psi-borg.org/other-dev.html'>here</a>],
+                    "Only for macOS and Windows"],
+                "Install Jack package",
+                    ["Afterwards, restart",
+                    "This will install the Jack audio server as well as an older version of QJackCtl"],
+                "Install QJackCtl",
+                    ["This version is much newer and built by the QJackTrip dev"],
+                "Install QJackTrip",
+            ],
+            media: [
+                "",
+                ""
+            ],
+            descs: [
+                "",
+            ]
+        },
+        {
+            title: ["Configuring QJackCtl", ""],
+            points: [
+                "Samplerate",
+                "Buffersize"
+            ],
+            media: [
+                "https://www.psi-borg.org/setup.png",
+                "QJackCtl"
+            ],
+            descs: [
+                "",
+            ]
+        },
+        {
+            title: ["Opening QJackTrip", ""],
+            points: [
+                ""
+            ],
+            media: [
+                "https://www.psi-borg.org/qjacktrip.png",
+                "QJackTrip"
+            ],
+            descs: [
+                "",
+            ]
+        },
+        {
+            title: ["Connecting", ""],
+            points: [
+                ""
+            ],
+            media: [
+                "https://www.psi-borg.org/basic-options.png",
+                "Making a connection"
+            ],
+            descs: [
+                "",
+            ]
+        },
+        {
+            title: ["For more information", ""],
+            points: [
+                ""
+            ],
+            media: [
+                "",
+                ""
+            ],
+            descs: [
+                ["Visit the official site for QJackTrip at ", <a href='https://www.psi-borg.org/other-dev.html'>https://www.psi-borg.org/other-dev.html</a>, ""]
+            ]
+        },
+        
+    ]}
+    ease = ""
+    issues = ""
+    info = ""
+    caution = ""
+/>

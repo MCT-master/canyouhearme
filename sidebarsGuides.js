@@ -1,7 +1,7 @@
 module.exports = {
   guides: {
     Overview: ['overview'],
-    Audio: [],
+    Audio: ['audio/jacktrip'],
     Video: ['video/livestream'],
     Tools: ['tools/wiki-entry'],
   },
