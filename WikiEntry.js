@@ -15,8 +15,8 @@ class WikiEntry extends React.Component {
                         <h1 class="avatar__name">{this.props.title}</h1>
                         <h4 class="avatar_links">
                             <a href={this.props.website}>Official website</a>
-                            { this.props.support.length > 0 &&
-                                <span> • <a href={this.props.support}>Support link</a></span>
+                            { this.props.support_url.length > 0 &&
+                                <span> • <a href={this.props.support_url}>Support link</a></span>
                             }
                         </h4>
                         <medium class="avatar__subtitle">
@@ -45,16 +45,17 @@ class WikiEntry extends React.Component {
                                     <h2>Basic information</h2>
                                     <br></br>
                                     <p><strong>Developer: </strong>{this.props.developer}</p>
+                                    <p><strong>Website: </strong><a href={this.props.website}>{this.props.website}</a></p>
                                     <p><strong>Protocol: </strong>{this.props.protocol}</p>
                                     <p><strong>OS Supported: </strong> {this.props.os_support}</p>
                                     <p><strong>Pricing: </strong>{this.props.pricing}</p>
                                     <p><strong>Requires sign-up?: </strong>{this.props.sign_up}</p>
-                                    <p><strong>Website: </strong><a href={this.props.website}>{this.props.website}</a></p>
+                                    <p><strong>Features: </strong>{this.props.features}</p>
                                 </div>
                                 <div class="col">
                                     <h2>Detailed information</h2>
                                     <br></br>
-                                    <p><strong>Self-hosted?: </strong>{this.props.hosting}</p>
+                                    <p><strong>Self-hosted?: </strong>{this.props.self_hosting}</p>
                                     <p><strong>Recommended net-speed: </strong>{this.props.rec_speed}</p>
                                     <p><strong>Required net-speed: </strong>{this.props.req_speed}</p>
                                     <p><strong>Max quality: </strong>{this.props.max_qual}</p>
@@ -90,8 +91,12 @@ class WikiEntry extends React.Component {
                                     <td>{this.props.os_support}</td>
                                 </tr>
                                 <tr>
+                                    <td><strong>Features:</strong></td>
+                                    <td>{this.props.features}</td>
+                                </tr>
+                                <tr>
                                     <td><strong>Self-hosted?:</strong></td>
-                                    <td>{this.props.hosting}</td>
+                                    <td>{this.props.self_hosting}</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Recommended net-speed:</strong></td>
@@ -199,13 +204,13 @@ WikiEntry.defaultProps = {
     description: '',
     developer: '',
     website: '',
-    support: '',
+    support_url: '',
     mct: '',
     protocol: 'Unknown',
     os_support: '',
     pricing: 'Free',
     sign_up: 'No',
-    hosting: 'N/A',
+    self_hosting: 'N/A',
     rec_speed: 'Flexible',
     req_speed: 'Unknown',
     max_qual: 'Unknown',

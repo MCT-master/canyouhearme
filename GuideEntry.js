@@ -59,7 +59,7 @@ class GuideEntry extends React.Component {
                     <div class="row_step step_title">
                         <h2> {Array.isArray(step_title) ? step_title[0] : step_title} </h2>
                         <span class="step_subtitle">
-                            <em> • {Array.isArray(step_title) && step_title[1]} </em>
+                            {(step_title[1] && step_title[1].length > 0) && <em> • {step_title[1]} </em>}
                         </span>
                     </div>
                     <div class="row_step scrollbox">
