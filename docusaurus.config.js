@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Can You Hear Me?',
-  tagline: 'For all your confusing audio-video menagerie',
+  tagline: 'Wiki, guides, and comparisons for the endless software solutions available today',
   url: 'https://jacksongoode.github.io',
   baseUrl: '/canyouhearme/',
   favicon: 'img/mct-logo.ico',
@@ -52,6 +52,10 @@ module.exports = {
           title: 'Community',
           items: [
             {
+              label: 'GitHub',
+              href: 'https://github.com/MCT-master',
+            },
+            {
               label: 'Discord',
               href: 'https://discord.gg/rzcKcxy',
             },
@@ -61,12 +65,12 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/MCT-master',
-            },
-            {
               label: 'Twitter',
               href: 'https://twitter.com/MCT_master',
+            },
+            {
+              label: 'University of Oslo',
+              href: 'https://www.uio.no/english/studies/programmes/mct-master/',
             },
           ],
         },

@@ -25,83 +25,85 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
             descs: [
                 ["",<a href='https://ccrma.stanford.edu/groups/soundwire/software/jacktrip/'>Jacktrip</a>," is a utility developed at CCRMA at Stanford for low-latency audio transmission between multiple clients."],
                 ["Jacktrip employs the ", <a href='https://jackaudio.org/'>Jack protocol</a>, " a high definition API for audio communication between applications. Jacktrip appears to be one of the few viable tools that, in theory, works on every operating system (Windows, macOS, Linux) which makes it a potentially worthwhile investment from the angle of usability and access alone."],
+                ["This brief tutorial will show how to connect to another peer using the P2P mode from QJackTrip. For more elaborate group sessions, a Hub Client is needed. Please see the instructions listed on ", <a href='https://www.psi-borg.org/other-dev.html'>QJackTrip's website</a>,"."]
             ]
         },
         {
             title: ["Downloading and installing", "A whole lot of Jacks"],
             points: [
-                "Visit the developers page to find all packages",
+                "Visit the developer's page to find all packages",
                     [["Found ", <a href='https://www.psi-borg.org/other-dev.html'>here</a>],
-                    "Only for macOS and Windows"],
-                "Install Jack package",
+                    "As of now, the pre-built packages are only available for macOS and Windows"],
+                "Install the Jack package as per the instructions",
                     ["Afterwards, restart",
                     "This will install the Jack audio server as well as an older version of QJackCtl"],
-                "Install QJackCtl",
+                "Install the newer QJackCtl",
                     ["This version is much newer and built by the QJackTrip dev"],
                 "Install QJackTrip",
-            ],
-            media: [
-                "",
-                ""
-            ],
-            descs: [
-                "",
-            ]
-        },
-        {
-            title: ["Configuring QJackCtl", ""],
-            points: [
-                "Samplerate",
-                "Buffersize"
-            ],
-            media: [
-                "https://www.psi-borg.org/setup.png",
-                "QJackCtl"
-            ],
-            descs: [
-                "",
-            ]
-        },
-        {
-            title: ["Opening QJackTrip", ""],
-            points: [
-                ""
             ],
             media: [
                 "https://www.psi-borg.org/qjacktrip.png",
                 "QJackTrip"
             ],
             descs: [
-                "",
+                ["JackTrip's open source repository can be found on GitLab", <a href='https://cm-gitlab.stanford.edu/cc/jacktrip'>here</a>],
             ]
         },
         {
-            title: ["Connecting", ""],
+            title: ["Configuring QJackCtl", ""],
             points: [
-                ""
+                "Open QJackCtl",
+                    ["Go to Setup"],
+                "Sample rate and buffer size (frames/period)",
+                    ["Make sure that both the sample rate and buffer size are shared between all participants in a session"],
+                "Start QJackCtl",
+            ],
+            media: [
+                "https://www.psi-borg.org/setup.png",
+                "QJackCtl",
+                0
+            ],
+            descs: [
+                "Upon opening QJackCtl (with uppercase Q), the control for the Jack protocol, you can find the settings through the 'Setup' button on the left-hand side.",
+            ]
+        },
+        {
+            title: ["Server and Clients in QJackTrip", ""],
+            points: [
+                "Open QJackTrip",
+                "Start on the server side",
+                    ["Either you or your partner can be the server or peer"],
+                    ["It makes sense for the user with the best network connection to be the server"],
+                "Type in the IP address of the server you plan to connect to",
+                    ["External IP address of the server should be the number you type into the 'Address of server'"],
+                "Click Start!",
+                    ["It should say 'Started' with the console text now in green."]
             ],
             media: [
                 "https://www.psi-borg.org/basic-options.png",
-                "Making a connection"
+                "Making a connection",
+                0,
             ],
             descs: [
-                "",
+                "You're now ready to send ",
             ]
         },
         {
-            title: ["For more information", ""],
+            title: ["Troubleshooting", "and more information"],
             points: [
                 ""
             ],
             media: [
-                "",
-                ""
+                "/static/img/guides/loveridge-doc.png",
+                "Ben Loveridge's tutorial",
+                0,
             ],
             descs: [
-                ["Visit the official site for QJackTrip at ", <a href='https://www.psi-borg.org/other-dev.html'>https://www.psi-borg.org/other-dev.html</a>, ""]
-            ]
+                ["Visit the official site for QJackTrip at ", <a href='https://www.psi-borg.org/other-dev.html'>https://www.psi-borg.org/other-dev.html</a>, ""],
+                ["However, making Jacktrip work for us involved quite a few technical steps, such as forwarding ports on our home router and testing network connections with iperf. For a detailed walk-through, we advice you to follow ", <a href='https://docs.google.com/document/d/18pbu2xQRv521NKvHuYHjIVXRcLFqcDsqYnfKixyuyGg/edit?usp=sharing'>Ben Loveridge’s guide</a>, ". His guide is quite extensive and features a number of FAQ’s for any trouble one might run into during installation or optimization. This is resource we recommend for an extensive discussion of JackTrip."],
+                ["For API documentation of Jacktrip you can read up on the documentation. However, the software documentation is old and is therefore likely to be outdated. Working with older software on newer operating systems, such as updates like macOS Catalina 10.15 that break functionality with a large number of apps, is always a challenge."],
+            ],
         },
-        
     ]}
     ease = ""
     issues = ""

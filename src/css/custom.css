@@ -28,9 +28,9 @@
   padding: 3rem 0;
   }
 
-.col--4 > p { 
-  font-size: 90%; /* smaller text on front page */
-}
+/* .col--4 > p { 
+  font-size: 90%; smaller text on front page
+} */
 
 .spec-table table {
   display: table;
@@ -139,7 +139,7 @@
   max-height: 50vh;
   box-shadow: 0 2px 6px 0 grey;
   max-width: 100%;
-  transition: all .2s;
+  transition: transform .2s; /* box shadow looks bad changing between steps */
   border-radius: 6px;
 }
 
@@ -212,4 +212,8 @@
   background-size: 100% 80px, 100% 80px, 100% 10px, 100% 10px;
   /* Opera doesn't support this in the shorthand */
   background-attachment: local, local, scroll, scroll;
+}
+
+.no-shadow {
+  box-shadow: none !important;
 }

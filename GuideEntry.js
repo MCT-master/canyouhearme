@@ -57,9 +57,9 @@ class GuideEntry extends React.Component {
                 </div>
                 <div class = "step_container">
                     <div class="row_step step_title">
-                        <h2> {Array.isArray(step_title) ? step_title[0] : step_title} </h2>
+                        <h2> { Array.isArray(step_title) ? step_title[0] : step_title } </h2>
                         <span class="step_subtitle">
-                            {(step_title[1] && step_title[1].length > 0) && <em> • {step_title[1]} </em>}
+                            { (step_title[1] && step_title[1].length > 0) && <em> • {step_title[1]} </em> }
                         </span>
                     </div>
                     <div class="row_step scrollbox">
@@ -67,9 +67,9 @@ class GuideEntry extends React.Component {
                             { points.length > 1 &&
                                 <div class="step_points">
                                     <ol> 
-                                        {points.map((point, index) => {
+                                        { points.map((point, index) => {
                                             return Array.isArray(point)
-                                                ? <ol> {point.map((subpoint) => (<li> {subpoint} </li>))} </ol> 
+                                                ? <ol> { point.map((subpoint) => (<li> {subpoint} </li>)) } </ol> 
                                                 : <li class="step_point"> {point} </li>
                                         })}
                                     </ol>
@@ -90,7 +90,10 @@ class GuideEntry extends React.Component {
                             <section class="column_media">
                                 <div class="step_image">
                                     <figure>
-                                        <img src= {media[0]} />
+                                        { media[2] === 0
+                                            ? (<img class="no-shadow" src= {media[0]} />)
+                                            : (<img src= {media[0]} />)
+                                        }
                                         <figcaption><em> {media[1]} </em></figcaption>
                                     </figure>
                                 </div>
