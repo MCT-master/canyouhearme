@@ -8,14 +8,14 @@ class WikiEntry extends React.Component {
         return (
             <div class="rendered">
                 <div class="avatar avatar--vertical">
-                    { this.props.pic_url.length > 0 &&
+                    { this.props.pic_url &&
                         <img class="avatar__photo avatar__photo--xl" src={this.props.pic_url}/>
                     }
                     <div class="avatar__intro">
                         <h1 class="avatar__name">{this.props.title}</h1>
                         <h4 class="avatar_links">
                             <a href={this.props.website}>Official website</a>
-                            { this.props.support_url.length > 0 &&
+                            { this.props.support_url &&
                                 <span> • <a href={this.props.support_url}>Support link</a></span>
                             }
                         </h4>
@@ -23,38 +23,35 @@ class WikiEntry extends React.Component {
                             {this.props.description}
                         </medium>
                     </div>
-                    { this.props.mct.length > 0 &&
+                    { this.props.mct &&
                         <div class="mct_links">
                             <a href={this.props.mct}>Post from the MCT Blog</a>
                         </div>
                     }
                 </div>
-                
                 <hr></hr>
-
+                
                 <Tabs
                 defaultValue="column"
                 values={[
-                    { label: 'Column', value: 'column', },
-                    { label: 'Table', value: 'table', },
+                    { label: 'Overview', value: 'column', },
+                    { label: 'Specifications', value: 'table', },
                 ]}>
                     <TabItem value="column">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <h2>Basic information</h2>
-                                    <br></br>
+                                    <h2 class="column_title">Basic information</h2>
                                     <p><strong>Developer: </strong>{this.props.developer}</p>
                                     <p><strong>Website: </strong><a href={this.props.website}>{this.props.website}</a></p>
                                     <p><strong>Protocol: </strong>{this.props.protocol}</p>
                                     <p><strong>OS Supported: </strong> {this.props.os_support}</p>
                                     <p><strong>Pricing: </strong>{this.props.pricing}</p>
                                     <p><strong>Requires sign-up?: </strong>{this.props.sign_up}</p>
-                                    <p><strong>Features: </strong>{this.props.features}</p>
                                 </div>
                                 <div class="col">
-                                    <h2>Detailed information</h2>
-                                    <br></br>
+                                    <h2 class="column_title">Detailed information</h2>
+                                    <p><strong>Features: </strong>{this.props.features}</p>
                                     <p><strong>Self-hosted?: </strong>{this.props.self_hosting}</p>
                                     <p><strong>Recommended net-speed: </strong>{this.props.rec_speed}</p>
                                     <p><strong>Required net-speed: </strong>{this.props.req_speed}</p>
@@ -62,7 +59,7 @@ class WikiEntry extends React.Component {
                                     <p><strong>Latency (estimate): </strong>{this.props.latency}</p>
                                     <p><strong>Last update: </strong>{this.props.last_update}</p>
                                     <p><strong>Open source?: </strong>{this.props.open_source}</p>
-                                    { this.props.repo.length > 0 &&
+                                    { this.props.repo &&
                                         <p><strong>Repo: </strong><a href={this.props.repo}>{this.props.repo}</a></p>
                                     }
                                 </div>
@@ -138,7 +135,7 @@ class WikiEntry extends React.Component {
 
                 <br></br>
 
-                { this.props.issues.length > 0 &&
+                { this.props.issues &&
                     <div class="admonition admonition-note alert alert--secondary">
                         <div class="admonition-heading">
                             <h5>
@@ -157,7 +154,7 @@ class WikiEntry extends React.Component {
                     </div>
                 }
                 
-                { this.props.info.length > 0 &&
+                { this.props.info &&
                     <div class="admonition admonition-tip alert alert--success">
                         <div class="admonition-heading">
                             <h5>
@@ -176,7 +173,7 @@ class WikiEntry extends React.Component {
                     </div>
                 }
 
-                { this.props.caution.length > 0 &&
+                { this.props.caution &&
                     <div class="admonition admonition-caution alert alert--warning">
                         <div class="admonition-heading">
                             <h5>
@@ -206,6 +203,7 @@ WikiEntry.defaultProps = {
     website: '',
     support_url: '',
     mct: '',
+    features: 'Unknown',
     protocol: 'Unknown',
     os_support: '',
     pricing: 'Free',

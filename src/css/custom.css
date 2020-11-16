@@ -93,6 +93,10 @@
   overflow: hidden;
 }
 
+.column_title {
+  margin-bottom: 1em;
+}
+
 .guide_header p {
   position: relative;
   margin: 0;
