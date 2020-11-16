@@ -7,6 +7,7 @@ module.exports = {
   organizationName: 'jacksongoode',
   projectName: 'canyouhearme',
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: 'CYHM?',
       logo: {
@@ -24,11 +25,13 @@ module.exports = {
           to: 'guides',
           activeBasePath: 'guides',
           label: 'Guides',
-          position: 'left'},
+          position: 'left'
+        },
         {
-          href: 'https://github.com/MCT-master',
-          label: 'GitHub',
+          href: 'https://github.com/jacksongoode/canyouhearme',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
