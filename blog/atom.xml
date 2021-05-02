@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jacksongoode.github.io/blog</id>
+    <id>https://mct-master.github.io/blog</id>
     <title>Can You Hear Me? Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://jacksongoode.github.io/blog"/>
+    <link rel="alternate" href="https://mct-master.github.io/blog"/>
     <subtitle>Can You Hear Me? Blog</subtitle>
-    <icon>https://jacksongoode.github.io/img/mct-logo.ico</icon>
+    <icon>https://mct-master.github.io/img/mct-logo.ico</icon>
 </feed>
