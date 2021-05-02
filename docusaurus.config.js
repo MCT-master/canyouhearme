@@ -1,10 +1,10 @@
 module.exports = {
   title: 'Can You Hear Me?',
   tagline: 'Wiki, guides, and comparisons for the endless software solutions available today',
-  url: 'https://jacksongoode.github.io',
+  url: 'https://mct-master.github.io',
   baseUrl: '/canyouhearme/',
   favicon: 'img/mct-logo.ico',
-  organizationName: 'jacksongoode',
+  organizationName: 'MCT-master',
   projectName: 'canyouhearme',
   themeConfig: {
     hideableSidebar: true,
@@ -28,7 +28,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://github.com/jacksongoode/canyouhearme',
+          href: 'https://github.com/mct-master/canyouhearme',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -88,7 +88,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebarsWiki.js'),
           editUrl:
-            'https://github.com/jacksongoode/canyouhearme/edit/master/',
+            'https://github.com/mct-master/canyouhearme/edit/master/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -108,7 +108,7 @@ module.exports = {
         include: ["**/*.mdx"],
         sidebarPath: require.resolve("./sidebarsGuides.js"),
         editUrl:
-            'https://github.com/jacksongoode/canyouhearme/edit/master/',
+            'https://github.com/mct-master/canyouhearme/edit/master/',
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },

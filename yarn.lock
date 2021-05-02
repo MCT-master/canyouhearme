@@ -1120,7 +1120,7 @@
     "@docsearch/css" "3.0.0-alpha.33"
     "algoliasearch" "^4.0.0"
 
-"@docusaurus/core@^2.0.0-alpha.70", "@docusaurus/core@2.0.0-alpha.fd17476c3":
+"@docusaurus/core@^2.0.0-alpha.75", "@docusaurus/core@2.0.0-alpha.fd17476c3":
   "integrity" "sha512-YgKxJ4+EQdYCFTgj+XENC+8eKPaiiIkaoXJzqCE2jSZXVaA+kAi+58RngFFNiiFHRDTXJYfUrIIv8kPRhFcRuA=="
   "resolved" "https://registry.npmjs.org/@docusaurus/core/-/core-2.0.0-alpha.fd17476c3.tgz"
   "version" "2.0.0-alpha.fd17476c3"
@@ -1341,7 +1341,7 @@
     "joi" "^17.2.1"
     "sitemap" "^3.2.2"
 
-"@docusaurus/preset-classic@^2.0.0-alpha.70":
+"@docusaurus/preset-classic@^2.0.0-alpha.75":
   "integrity" "sha512-N7AaNAGe61VCdDteipgm3cR1228zRynjLzX/fmzIJK+Tw8ch+iHmbAFKLLZZenGO09Xa3VSnVDtoi9vYctnf5A=="
   "resolved" "https://registry.npmjs.org/@docusaurus/preset-classic/-/preset-classic-2.0.0-alpha.fd17476c3.tgz"
   "version" "2.0.0-alpha.fd17476c3"
