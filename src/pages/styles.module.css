@@ -5,7 +5,7 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 3rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -14,6 +14,9 @@
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+  }
+  .features_src-pages {
+    padding: 0 2rem 0;
   }
 }
 
@@ -31,6 +34,10 @@
 }
 
 .featureImage {
-  height: 175px;
-  width: 175px;
+  height: 150px;
+  width: 150px;
+}
+
+.container {
+  padding: 2rem;
 }

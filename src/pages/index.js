@@ -12,13 +12,13 @@ const features = [
     imageUrl: 'img/pack/010-sound waves.svg',
     description: (
       <>
-        Can You Hear Me is a site for both the aspiring network musician and stir-crazy Luddite who wants to connect over the web. This site hosts range of softwares, guides and tools for comparison that should allow you to make an educated decision without leaving the url.
+        Can You Hear Me is a site for both the aspiring networked musician and stir-crazy Luddite who wants to connect over the web. This site hosts range of softwares, guides and tools for comparison that should allow you to make an educated decision without leaving the url.
       </>
     ),
   },
   {
     title: <>Friendly and accessible</>,
-    imageUrl: 'img//pack/042-shuffle.svg',
+    imageUrl: 'img/pack/042-shuffle.svg',
     description: (
       <>
         Knowledge about networked media shouldn't be kept in an ivory tower or scattered across the net. The information presented here is accessible across every background.

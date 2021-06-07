@@ -1,8 +1,12 @@
+function prfx(list, prefix) {
+  return Array.from(list,(i) => [prefix,i].join('/'));
+}
+
 module.exports = {
   guides: {
     Overview: ['overview'],
-    Audio: ['audio/jacktrip'],
-    Video: ['video/livestream'],
-    Tools: ['tools/wiki-entry'],
+    Audio: prfx(['jacktrip'],'audio'),
+    Video: prfx(['livestream'], 'video'),
+    Tools: prfx(['wiki-entry'], 'tools'),
   },
 };
